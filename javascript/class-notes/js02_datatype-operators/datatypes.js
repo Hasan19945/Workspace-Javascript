@@ -79,7 +79,8 @@ console.log(xCord) //?undefined
 
 yCord = 5
 // var yCord //? Hoisting
-console.log(yCord)
+console.log(yC
+  ord)
 
 var yCord = 7
 console.log(yCord)
