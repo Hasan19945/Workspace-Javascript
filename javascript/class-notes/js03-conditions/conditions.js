@@ -133,6 +133,23 @@ hizmetYili >= 5 && (maas *= 1.1)
 hizmetYili >= 5 || (maas *= 1.1)
 console.log(maas)
 
+// yeni ornek
+const yas= 65
+let gelir=17000
+
+yas <=63 ? (gelir*=1.2) : ""
+console.log(gelir)
+
+yas >=63 ? (gelir*=1.2) : ""
+console.log(gelir)
+
+yas >=63 && (gelir*=1.2)
+console.log(gelir)
+
+yas >=63 || (gelir*=1.2) 
+console.log(gelir)
+
+
 //**************** SWITCH-CASE *******************
 const gun = 6
 
@@ -154,5 +171,23 @@ switch (gun) {
     break
   default:
     console.log("Hafta sonu")
+    break
+}
+
+// yeni ornek
+const ay = 5
+
+switch (ay) {
+  case 1:
+    console.log("Januar")
+    break
+  case 2:
+    console.log(februar) // " icinde olmasi gerekiyor ama 2. ay olmadihgi icin bunu okumadi ve hata vermedi"
+    break
+  case 3:
+    console.log("mars")
+    break
+  default:
+    console.log("mars'ta bitti")
     break
 }
