@@ -43,7 +43,7 @@ if (Boolean(sonuc) == true) {
 //? yazdiriniz.
 const n1 = 6
 const n2 = 7
-const n3 = 7
+const n3 = 3
 
 //? 1. YONTEM
 if (n1 >= n2 && n1 >= n3) {
@@ -70,6 +70,28 @@ if (n3 >= n1) {
     console.log("2-En büyük:", n3)
   }
 }
+//? 1. yontem tekrari
+if (n1<=n2 && n1<=n3) {
+  console.log("en kucuk :" , n1)
+} else if (n2<=n1 && n2<=n3) {
+  console.log("en kucuk:", n2)
+} else if ( n3<=n1 && n3<=n2) {
+  console.log('en kucuk:' , n3)
+}
+//? 2.yontem tekrari
+if (n1<=n2) {
+  if (n1<=n3) {
+    console.log("en kucuk:" ,n1)
+  }
+}
+if (n2<=n1) {
+  if (n2<=n3) {
+    console.log("en kucuk:", n2)
+  }
+}
+if(n3<=n1){if (n3<=n2){console.log("en kucuk:", n3)}} // bunu bu sekilde de yazabiliriz ama daha iyi gorulebilmesi icin yukaridakiler gibi altalta yazmak daha uygun
+
+
 //**************** TERNARY *******************
 //? if-else
 const not = 60
@@ -90,6 +112,9 @@ const hız = 85
 const mesaj = hız >= 120 ? "Hızlı" : hız >= 90 ? "Normal" : "Yavaş"
 console.log(mesaj)
 
+const degree = 5
+const hava = degree>=30 ? "sicak" : degree>=10 ? "normal" : "soguk"
+console.log("bugun," , hava)
 //? Tek kosullu ternary - if()
 const hizmetYili = 2
 let maas = 15000
