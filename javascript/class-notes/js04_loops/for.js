@@ -65,3 +65,8 @@ if (n1 >= n2) {
 
   console.log(toplam)
 }
+function yasyazdir(){
+  console.log(`benim adim Hasan ve ben ${2023 - 1994} yasindayim`);
+}
+yasyazdir();
+console.log(yasyazdir)
