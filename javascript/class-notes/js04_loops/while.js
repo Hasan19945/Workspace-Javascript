@@ -30,7 +30,7 @@ console.log("bu da benim olsun")
 //   alert("Not 0'dan kucuk veya 100'den buyuk olamaz.")
 // }
 
-let not1 = prompt("Lütfen notunuzu giriniz:")
+9890let not1 = prompt("Lütfen notunuzu giriniz:")
 while (not1 < 0 || not1 > 100) {
   console.log("Not 0'dan kucuk veya 100'den buyuk olamaz.")
   not1 = prompt("Yeniden notunuzu giriniz:")
@@ -46,11 +46,12 @@ console.log("Giridiginiz Not:", not1)
 // console.log("Giridiginiz Not:", not2)
 //? WHILE
 
-let j = 0
+let j = 1
 
 do {
   console.log(j)
   j++
-} while (j < 10)
+} while (j < 5)
+
 
 console.log("Dongu bitti")
