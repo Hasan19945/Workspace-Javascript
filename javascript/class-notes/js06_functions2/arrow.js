@@ -57,4 +57,32 @@ const cikar = (a, b) => a - b
 const carp = (a, b) => a * b
 const bol = (a, b) => a / b
 
-const hesapMakinasi = () => {}
+const hesapMakinasi = (num1, num2, op) => {
+  let result = 0
+  switch (op) {
+    case "+":
+      result = topla(num1, num2)
+      break
+    case "-":
+      result = cikar(num1, num2)
+      break
+    case "*":
+      result = carp(num1, num2)
+      break
+    case "/":
+      result = bol(num1, num2)
+      break
+    default:
+      alert("Yanlis operator girişi")
+      break
+  }
+
+  return result
+}
+
+const num1 = +prompt("1.Sayi:")
+const op = prompt("Islemi giriniz: +,-,*,/:")
+const num2 = +prompt("2.Sayi:")
+
+// console.log(hesapMakinasi(num1, num2, op))
+console.log(`${num1}${op}${num2}=${hesapMakinasi(num1, num2, op)}`)
