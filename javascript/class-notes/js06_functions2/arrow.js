@@ -13,7 +13,7 @@ yaz()
 //* ORNEK: paramterli, ve donus degerli
 //***********************************************/
 const kareAl = (num) => num * num
-console.log("Kare:", kareAl(4))
+console.log("Kare:", kareAl(3))
 
 //* ORNEK: birden fazla ifade(expression) icerirse
 //***********************************************/
