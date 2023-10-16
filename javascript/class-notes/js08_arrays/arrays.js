@@ -128,3 +128,27 @@ console.log(meyveler)
 //* ile buyuk sayilari yer degistirerek siralama islemini gerceklestirir.
 meyveler.sort()
 console.log(meyveler)
+
+const numbersUnsorted = [2, 3, 22, 33, 55, 1, 11, 111, 12]
+numbersUnsorted.sort()
+console.log(numbersUnsorted)
+
+numbersUnsorted.sort((a, b) => a - b)
+console.log(numbersUnsorted)
+
+//* fill()
+let veriler = [1, 3, 4, 5]
+veriler.fill(0)
+console.log(veriler)
+
+veriler.fill(2, 1)
+console.log(veriler)
+
+veriler.fill(3, 1, 3)
+console.log(veriler)
+
+veriler.fill(1, -1)
+console.log(veriler)
+
+veriler = []
+console.log(veriler)
