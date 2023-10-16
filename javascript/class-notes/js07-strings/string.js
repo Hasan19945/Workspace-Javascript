@@ -15,6 +15,7 @@ console.log(str4);
 const str5="45"
 const str6="🎈"  // windows + .
 
+
 /* -------------------------------------------------------------------------- */
 /*                             Escape karakterleri                            */
 /* -------------------------------------------------------------------------- */
@@ -357,3 +358,50 @@ console.log(sentence1.trimEnd());
 metin="Clarusway"
 console.log(metin.toUpperCase().startsWith("C"));
 console.log(email.toUpperCase().endsWith("COM"));
+console.log(str5);
+let metinn='Hasan\'in yeni evi nasil?'
+console.log(metinn)
+console.log(metinn.length);
+metinn.length
+let yenimetin='yaziyorum'
+console.log(yenimetin);
+console.log(yenimetin.length);
+yenimetin[2]
+yenimetin[1]="p" //stringleri tek tek degistiremezsin, hepsini degistirebilirsin istersen
+console.log(yenimetin);
+console.log(yenimetin[2]);
+console.log(yenimetin[1]);
+console.log(yenimetin[0]);
+for (let i=0; i<yenimetin.length; i++)
+console.log(yenimetin[i]);
+for (let i=0; i<=yenimetin.length-1; i++)
+console.log(yenimetin[i]);
+console.log(metin1);
+console.log(metin2);
+let mett =metin1.concat(metin2)
+console.log(mett);
+console.log(metin1);
+cett= metin1+ ' ' +metin2
+console.log(cett);
+mett=metin1+'as'+ metin2
+console.log(mett);
+cett=metin1+'ne'+metin2
+console.log(cett);
+const deneme=`${metin1} ${cett} boyle
+devam edecegiz
+ya da boyle ${metin2}`
+console.log(deneme);
+let nedir='yetmisyedi'
+console.log(nedir);
+const cumle2="Ali ata bak, top oynarken"
+console.log(cumle2);
+console.log(cumle2.toUpperCase());
+console.log(yenicumle=cumle2.toLocaleLowerCase());
+console.log(yenicumle);
+let metin5="Han bor i Kristiansand"
+let splitmetin5=metin5.split("a")
+console.log(splitmetin5);
+console.log(metin5);
+let bugun="10.01.2023"
+let bugunsplit=bugun.split("0")
+console.log(bugunsplit);
