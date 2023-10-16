@@ -405,3 +405,32 @@ console.log(metin5);
 let bugun="10.01.2023"
 let bugunsplit=bugun.split("0")
 console.log(bugunsplit);
+
+let cumle6="buradan bir atli gecti"
+console.log(cumle6);
+console.log(cumle6.split(""));
+console.log(cumle6.split("").reverse());
+console.log(cumle6.split("").reverse().join());
+console.log(cumle6.split("").reverse().join(""));// "" arasinda bosluk yok-- itceg ilta rib nadarub
+console.log(cumle6.split(" ").reverse().join(" "));//hemjoin icin hem e split icin birer bosluk koydum. sonuc=gecti atli bir buradan
+ let kelime2="kayak"
+ console.log(kelime2.split("").reverse().join(""));
+ console.log(cumle2);
+ console.log(cumle2.slice(1,5));
+ console.log(cumle2.slice(5,14));
+ console.log(cumle2.substring(5,14));//5.den 14.ye. tabi 14.yu saymaz
+ console.log(cumle2.substr(5,9));//5.den itibaren 9 tane karekter verir
+console.log(cumle2.replace("ata","bana"));
+console.log(cumle2); 
+console.log(cumle2.indexOf("li"));
+console.log(cumle2.indexOf("kali"));
+console.log(cumle2.indexOf("ata"));
+console.log(cumle2.search("bak"));
+console.log(cumle2.search("Bak"));
+console.log(cumle2.search(/Bak/gi));
+console.log(cumle2.search(/[qeal]/i));
+console.log(cumle2.search(/[qeAl]/));
+console.log(cumle2.startsWith("Ali"));
+console.log(cumle2.startsWith("ali"));
+console.log(cumle2.toLowerCase().startsWith("ali"));
+console.log(cumle2.endsWith("ken"));
