@@ -27,7 +27,7 @@ console.log(isimler[0]) //? ahmet
 console.log(isimler[5]) //? Canan
 
 //* Dizinin son elemanini oku
-const sonEleman = isimler[isimler.length - 1] //? en son
+const sonEleman = isimler[isimler.length -1] //? en son
 console.log(sonEleman)
 
 //!  Diziye veri yazma
@@ -127,7 +127,7 @@ console.log(meyveler)
 //* fonksiyonunu dizinin her bir elemanina uygular. Bu sayede kucuk sayilar
 //* ile buyuk sayilari yer degistirerek siralama islemini gerceklestirir.
 meyveler.sort()
-console.log(meyveler)
+console.log(meyveler)//alfebatik siralar
 
 const numbersUnsorted = [2, 3, 22, 33, 55, 1, 11, 111, 12]
 numbersUnsorted.sort()
@@ -141,7 +141,7 @@ let veriler = [1, 3, 4, 5]
 veriler.fill(0)
 console.log(veriler)
 
-veriler.fill(2, 1)
+veriler.fill(1, 2)
 console.log(veriler)
 
 veriler.fill(3, 1, 3)
