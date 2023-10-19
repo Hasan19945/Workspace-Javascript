@@ -176,3 +176,12 @@ for (let i = 0; i < 10; i++) {
   alert(i); // ekranda 1, 3, 5, 7, 9 değerleri gösterilir.
 }
 */
+let letters = ['A', 'B', 'C', ,'E'];
+for (let i = 0; i < letters.length; i++) {
+  console.log(letters[i]);
+}
+
+let letter = ['A', 'B', 'C', ,'E'];
+letters.forEach((letter) => {
+  console.log(letter);
+});
