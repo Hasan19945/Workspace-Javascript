@@ -93,3 +93,77 @@ console.log(aradakiMaaslar)
 const dokuzBindenAz = maaslar.filter((m) => m < 9000).map((m) => m * 1.5)
 
 console.log(dokuzBindenAz)
+
+//* =======================================
+//*             REDUCE METHOD
+//* =======================================
+
+const salaries = [10000, 15000, 9000, 20000]
+
+const sumOfSalaries = salaries.reduce((sum, sal) => sum + sal, 0)
+console.log("TOTAL:", sumOfSalaries)
+
+const sumOfSalaries1 = salaries.reduce((sum, sal, i) => {
+  console.log(`${i} - ${sum + sal}`)
+  return sum + sal
+}, 0)
+console.log("TOTAL:", sumOfSalaries1)
+
+const numbers = [3, 2, 5, 4]
+const multiply = numbers.reduce((acc, val) => acc * val, 1)
+console.log(multiply)
+
+//? filter, map, reduce
+const zamliMaasToplami = salaries
+  .filter((s) => s >= 9000 && s < 15000)
+  .map((s) => s * 1.5)
+  .reduce((sum, salary) => sum + salary)
+
+console.log("Zamlı Maas Toplami:", zamliMaasToplami)
+
+//* =======================================
+//*               OTHERS
+//* =======================================
+
+//* every()
+//*-----------------------------------------------------------
+//? Tum diziyi itere eder ve aldigi callback fonksiyonuna gore
+//? test gerceklestirir.Tum elemanlar icin test basarili ise
+//? true aksi takdirde false deger dondurur.
+
+const ages = [18, 22, 78, 44, 78, 89, 25]
+const check = ages.every((age) => age >= 18)
+
+check ? console.log("All ages are over 18") : console.log("Some are under 18")
+
+//* some()
+//*-----------------------------------------------------------
+//? Aldigi callback fonksiyonuna gore test gerceklestirir.
+//? En az bir eleman icin bile test basarili ise true aksi
+//? takdirde false deger dondurur.
+
+const over80 = ages.some((a) => a >= 80)
+console.log(over80) //? true
+
+//* find(), findLast()
+//*-----------------------------------------------------------
+//? Aldigi callback fonksiyonuna gore test gerceklestirir.
+//? Kosulu saglayan ilk dizi elemaninin dondurur.
+//? Eger hic bir eleman kosulu saglamazsa undefined dondurur.
+
+//?Ornek: Yasi 30 dan buyuk olan ilk ve son elemani yazdirin
+const ageBigThan30First = ages.find((age) => age >= 30)
+const ageBigThan30Last = ages.findLast((age) => age >= 30)
+console.log(ageBigThan30First, ageBigThan30Last)
+
+console.log(ages.find((age) => age >= 80)) //? undefined
+
+//* findIndex()
+//*-----------------------------------------------------------
+//? Aldigi callback fonksiyonuna gore test gerceklestirir.
+//? Kosulu saglayan ilk dizi elemaninin indeksini dondurur.
+//? Eger hic bir eleman kosulu saglamazsa -1 dondurur.
+
+//?Ornek: Yasi 30 dan buyuk olan ilk elemanin indexini yazdirin
+const foundIndex = ages.findIndex((age) => age > 18)
+console.log(foundIndex) //? 1
