@@ -5,7 +5,10 @@ console.log("**** LOOPS IN ARRAYS ***")
 
 const notlar = [20, 55, 100, 89, 32]
 let toplam = 0
-for (let i = 0; i < notlar.length; i++) {
+for (let i = 0;
+   i < notlar.length;
+   
+i++) {
   toplam += notlar[i]
   // console.log(toplam)
 }
