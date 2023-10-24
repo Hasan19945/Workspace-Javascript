@@ -185,3 +185,25 @@ let letter = ['A', 'B', 'C', ,'E'];
 letters.forEach((letter) => {
   console.log(letter);
 });
+
+let myArray = [1, 2, 3, 4, 5];
+myArray.splice(2, 1, 6);
+console.log(myArray); // [1, 2, 6, 4, 5]
+
+const numbers = [0, 1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((num) => num / 2 === 2);
+console.log(evenNumbers) 
+const evennumbers=numbers.filter((num) => num % 2 ===0);
+console.log(evennumbers);// [0, 2, 4]
+
+const numbes = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator +
+currentValue, 0);
+console.log(sum) //15
+
+{
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+numbers.forEach(num => console.log(num * 2));
+}

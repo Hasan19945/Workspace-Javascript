@@ -17,18 +17,41 @@ console.log("**************")
 //?forEach
 prices.forEach((p) => console.log(p * 1.1))
 
+
+console.log("**********");
+//? yeni ornek
+const harcliklar= [200, 210, 150, 250,300]
+for (let harclikgunluk of harcliklar) {
+  console.log(harclikgunluk);
+}
+for (let gunluk of harcliklar ) {
+  console.log(gunluk);
+}
+
+harcliklar.forEach((harcliklar) =>console.log(harcliklar*2)); //harcliklar.forEach((h) =>console.log(h*2)); ile ayni
+
+//harclikgunluk.forEach((h)=>console.log(h*2)); harclikgunluk tanimlanmadigi icin cikti vermez
+
+
+console.log("*********");
 //? 2 parametreli forEach
 prices.forEach((price, index) => console.log("DEGER:", price, "SIRA:", index))
+harcliklar.forEach((ha,index)=> console.log("Ydeger:", ha, "Ysiar:", index+11))
 
 //? prices'ın toplamını hesaplayiniz.
 let sum = 0
 prices.forEach((price) => (sum += price))
 console.log("SUM:", sum)
 
+let toplam =1000
+harcliklar.forEach((harcliklar) => (toplam += harcliklar))
+console.log("Total ", toplam );
+
+
 //? 3 paramtreli foreach
 //? callback func'da satir sayisi birden fazla oldugu icin suslu kullandik.
 //? foreach metodu void function'dır yani bir sey dondurmez.
-prices.forEach((p, i, arr) => {
+/*prices.forEach((p, i, arr) => {
   if (p < 270) {
     arr[i] = p * 1.1
   }
@@ -85,7 +108,7 @@ console.log(aradakiMaaslar)
 
 //* =======================================
 //*          CHAINING (PIPELINE)
-//* =======================================
+/* =======================================
 //? Maasi 9000'den az olanlara %50 zam yaparak bu degerleri
 //? yeni diziye saklayalim.
 
@@ -166,4 +189,4 @@ console.log(ages.find((age) => age >= 80)) //? undefined
 
 //?Ornek: Yasi 30 dan buyuk olan ilk elemanin indexini yazdirin
 const foundIndex = ages.findIndex((age) => age > 18)
-console.log(foundIndex) //? 1
+console.log(foundIndex) //? 1 */
