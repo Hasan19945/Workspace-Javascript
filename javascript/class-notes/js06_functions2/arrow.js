@@ -80,9 +80,9 @@ const hesapMakinasi = (num1, num2, op) => {
   return result
 }
 
-const num1 = +prompt("1.Sayi:")
-const op = prompt("Islemi giriniz: +,-,*,/:")
-const num2 = +prompt("2.Sayi:")
+//const num1 = +prompt("1.Sayi:")
+//const op = prompt("Islemi giriniz: +,-,*,/:")
+//const num2 = +prompt("2.Sayi:")
 
 // console.log(hesapMakinasi(num1, num2, op))
-console.log(`${num1}${op}${num2}=${hesapMakinasi(num1, num2, op)}`)
+//console.log(`${num1}${op}${num2}=${hesapMakinasi(num1, num2, op)}`)
