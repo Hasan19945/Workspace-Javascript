@@ -44,7 +44,7 @@ prices.forEach((price) => (sum += price))
 console.log("SUM:", sum)
 
 let toplam =1000
-harcliklar.forEach((harcliklar) => (toplam += harcliklar))
+harcliklar.forEach((har) => (toplam += har))
 console.log("Total ", toplam );
 
 
