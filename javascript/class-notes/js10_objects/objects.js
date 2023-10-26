@@ -126,9 +126,9 @@ console.log(people.canan.soyadi)
 
 const peopleJSON = [
   { adi: "Ahmet", soyadi: "Can" },
-  { adi: "Canan", soyadi: "Can" },
+  { adi: "Canan", soyadi: "Kan" },
 ]
-console.log(peopleJSON[0])
+console.log(peopleJSON[1])
 console.log(peopleJSON[0].adi) //? Ahmet
 
 const team = [
@@ -160,6 +160,7 @@ const concatinatedNames = team.map((p) => {
     age: p.age + 5,
   }
 })
+console.log(concatinatedNames);
 
 const concatinatedNames1 = team.map((p) => ({
   fullName: `${p.name.toUpperCase()} ${p.surname.toUpperCase()}`,
