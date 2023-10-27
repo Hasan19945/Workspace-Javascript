@@ -155,8 +155,61 @@ productPrintDestr(data)
 
 //* ==============================================
 //*  REST (...)
+const karaaraclari =[" ATV","Araba", "kamyonet", "tir", "kamyon"]
+const [p1, p2, ...gerkalanlar] =karaaraclari
+console.log(gerkalanlar);
+console.log(karaaraclari);
 //* =============================================
+//? rest object
+const veri ={
+  id: "1",
+  brand: "Apple",
+  product:"Iphones15",
+  stock:1000
+}
+const {id, brand, ...productkalanlar} =veri
+console.log(productkalanlar);
 
+const havaaraclari =["ucak ", "IHA", "SIHA", "helikopter"]
+const araclar =[...karaaraclari ,"isimsiz arac", ...havaaraclari]
+console.log(araclar);
+
+const slogan ="Bu bir slogandir"
+console.log(slogan);
+const sloganLar= [...slogan]
+console.log(sloganLar);
+console.log(slogan);
+console.log("*******");
 //* ==============================================
 //*  SPREAD (...)
-//* =============================================
+const sayilar = [1,3,4,2,18,32,24];
+console.log(Math.max(sayilar));//Nan
+console.log(Math.max(...sayilar)); //32
+console.log(Math.max[sayilar]);//undefind
+
+const ciftler= [2,4,6]
+const tekler=[1,3,5]
+const yeniciftler = ciftler
+console.log(yeniciftler,ciftler);
+yeniciftler.push(8)
+console.log(yeniciftler, ciftler);// ikisine de ekleme yaptigi icin ayni ciktiyi verdi
+
+const yeniArr= [...tekler]// bu sayese eklemeleri ayri ayri yapabilirsin, yukaridakinden farkli olarak
+console.log(yeniArr, tekler);
+yeniArr.push(7)
+console.log(yeniArr,tekler);
+
+//* Object copying==================
+
+const firstobj= {a:1,b:2,c:2}
+const secondobj={a:2,d:3, c:4}
+
+const copyfirstobj= {...firstobj}
+console.log(copyfirstobj);
+copyfirstobj.a=44
+console.log(copyfirstobj);
+
+//? nesting olmadigi icin deep copy gibi davrannir
+ console.log(copyfirstobj,firstobj);
+ const combinObj={...secondobj,...firstobj}
+ console.log(combinObj);
