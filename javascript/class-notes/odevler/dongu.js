@@ -24,3 +24,14 @@ for (let i=0;
         console.log(`dizideki negatif sayilarin toplami: ${negatifler}`);
     };
     topla(dizi);*/
+    
+    const adlar= ["Ahmety", "Can", "Ali", "Veli", "Elif"];
+    const soyadlar= ["Ozturk", "Yilmaz", "celebi", "boz", "koc"];
+    const birlestir =(x,y) => {
+        let adVesoyadlar =[];
+        for (let in x) {
+            adVesoyadlar[i]= `${x[i]} ${[i]}`;
+        }
+        return adVesoyadlar;
+    };
+    console.log(birlestir(adlar,soyadlar));

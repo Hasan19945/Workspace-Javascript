@@ -213,3 +213,114 @@ console.log(copyfirstobj);
  console.log(copyfirstobj,firstobj);
  const combinObj={...secondobj,...firstobj}
  console.log(combinObj);
+ //? nested
+const sahislar = {
+  sahis1: {
+    name: "Can",
+    surname: "Canan",
+    dob: "1990",
+    job: "developer",
+    salary: "140000",
+    drivingLicense: true,
+  },
+  sahis2: {
+    name: "John",
+    surname: "Sweet",
+    dob: "1990",
+    job: "tester",
+    salary: "110000",
+    drivingLicense: false,
+  },
+  sahis3: {
+    name: "Steve",
+    surname: "Job",
+    dob: "2000",
+    job: "developer",
+    salary: "90000",
+    drivingLicense: true,
+  },
+}
+
+console.log("MAAS:", sahislar.sahis1.salary)
+
+//! FOR - IN
+//* for (key in object) {
+//*   // code block to be executed
+//* }
+
+for (let s in sahislar) {
+  // console.log(s)
+  // console.log(sahislar[s]) //? square bracket notasyon
+  console.log(sahislar[s].salary) //? square bracket notasyon
+}
+
+//? Javascript'de Objeler default olarak iterable degildir.
+//? Ama for in ve for of donguleri ile itere edilebilirler.
+
+//? Objelerin key ve value'larini okumak icin built-in metotlar vardir.
+//? Bu mettotlar aslinda objelerin key ve/veya value'lari bir dizi olarak dondurur.
+console.log(Object.keys(sahislar))
+console.log(Object.values(sahislar))
+console.log(Object.entries(sahislar))
+
+//! FOR - OF
+//* for (x of iterable) {
+//*   code block to be executed
+//* }
+
+console.log("****************")
+for (let key of Object.keys(sahislar)) {
+  console.log(key)
+}
+
+
+//1. Basic Object Destructuring: Temel Nesne Yıkımı
+const person = {
+  name: 'John',
+  age: 25,
+  city: 'New York'
+};
+// Extracting properties using object destructuring
+const { name, age, city } = person;
+console.log(name); // Output: John
+console.log(age); // Output: 25
+console.log(city); // Output: New York
+
+const car = {
+  brand: 'Toyota',
+  model: 'Camry'
+};
+// Renaming variables using object destructuring
+const { brand: carBrand, model: carModel } = car;
+console.log(carBrand); // Output: Toyota
+console.log(carModel); // Output: Camry
+//3. Default Values: Varsayılan Değerler
+{
+  const person = {
+  name: 'John',
+  age: 25
+};
+// Providing default values using object destructuring
+const { name, age, city = 'New York' } = person;
+console.log(name); // Output: John
+console.log(age); // Output: 25
+console.log(city); // Output: New York
+}
+//. Nested Object Destructuring: İç İçe Nesne Yıkımı
+{
+  const student = {
+  name: 'Alice',
+  age: 20,
+  address: {
+  city: 'London',
+  country: 'UK'
+}
+};
+// Extracting nested properties using object destructuring
+const { name, address: { city, country } } = student;
+console.log(name); // Output: Alice
+console.log(city); // Output: London
+console.log(country); // Output: UK
+
+}
+

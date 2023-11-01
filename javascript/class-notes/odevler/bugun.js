@@ -121,4 +121,146 @@ function sum(...toplam) {
   }
   console.log(sum2(1, 2, 3, 4, 5, 'aa')); // 15*/
 
-  
+/*const eleman= ("sekiz yedi, alti 5 '4' ")
+console.log(eleman);
+const nesneler =[ "bir", 2, "3", 'dost, dortbucuk,4, 4.5, hala dort', 5]
+console.log(nesneler);
+console.log(length.nesneler);
+
+
+const person = {
+  name: 'John',
+  age: 25,
+  city: 'New York'
+};
+console.log(person.name); // Output: John
+console.log(person['age']); // Output: 25
+console.log(person);
+delete person.age;
+console.log(person);
+console.log(person['age']); // undefind
+
+//Checking if a Property Exists:  Bir Özelliğin Var Olup Olmadığının Kontrol Edilmesi
+const car = {
+  brand: 'Toyota',
+  model: 'Camry'
+};
+console.log('model' in car); // Output: true
+console.log('color' in car); // Output: false
+
+//Deleting Object Properties:  Nesne Özelliklerini Silme
+const laptop = {
+  brand: 'HP',
+  RAM: 8,
+  storage: '256GB'
+};
+delete laptop.RAM;
+console.log(laptop); // Output: { brand: 'HP', storage: '256GB' }
+
+
+//Adding Object Properties: Nesne Özelliklerinin Eklenmesi
+const user = {
+  name: 'Alice',
+  age: 30
+};
+user.email = 'alice@example.com';
+console.log(user); // Output: { name: 'Alice', age: 30, email: 'alice@example.com' 
+
+//Creating Object Properties: Nesne Özelliklerini Oluşturma:
+const smartphone = {};
+Object.defineProperties(smartphone, {
+  brand: {
+    value: 'Samsung',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  model: {
+    value: 'Galaxy S20',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  }
+});
+smartphone.brand = 'Apple';
+smartphone.model = 'iPhone 12';
+console.log(smartphone); // Output: { brand: 'Apple', model: 'iPhone 12' } 
+
+*/
+
+//? 1)
+`console.log(“55” < 56 && 67 === “67" || 253 % 11 && !false)`
+//? 2)
+console.log((15 * 2) / 3 + 8 === 18 || (10 % 3) ** 2 >= 4 && !(5 > 7))
+//? 3)
+const day = “Thursday”
+switch (day) {
+    case “Monday”: case “Tuesday”: case “Wednesday”: case “Thursday”: case “Friday”: case “Saturday”: case “Sunday”: default:
+    console. log(“It’s a weekday.“); break; console. log(“It’s a weekend day.“); break; console. log(“It’s a invalid day.“);
+    }
+//? 4)
+const x = 5;
+const y = 10; if ((x + y) % x && y < 15) {
+    console. log( “Both conditions are true”); }
+    else {
+    console.log(“At least one condition is false”); }
+//? 6)
+let number = 1; let sum = 0; while (number <= 10) {
+    sum += number; number++;
+    console.log( “Total: ” + sum);
+//? 7)
+let result = 0;
+for (let i = 1; i <= 5; i++) {
+    result *= i;
+}
+console.log(“Result: ” + result);
+//? 8)
+function message(username) {
+    console.log(‘Hello ${username}’);
+let sayHello = message;
+sayHello(“Fs Cohort 15”);
+//? 11)
+console.log(‘hello’.replace(‘l’, ‘r’))
+//? 12)
+let myVar = “clarusway”
+myVar[0] = “C”
+//? 13)
+let str = “Once a day”;
+let index = str.indexOf(“a”);
+let index2 = str.lastIndexOf(“a”);
+console.log(str.indexOf(“a”, index + 1) === index2);
+// (index+1): shows the starting point of finding
+//? 14)
+let myName = “Anthony Harold”;
+myName = myName.slice(8)
+myName.toLowerCase() //?not active because not assigned!
+console.log (myName) //Harold (not harold!!!)
+//? 17)
+const myArr2 = [“1” , 2, “Hello”, “World!“];
+const newArr = myArr2.reverse();
+console.log(myArr2);
+//? 18)
+const myArr = [1, 2, 5, 6, 7, 3, 41];
+const newArr = myArr;
+    myArr.sort();
+    const numArr = newArr.forEach ((item, index)=> item);
+    newArr.forEach ((item, index)=> console.log(item));
+    console.log(numArr);  //undefined
+    //? **** forEach do not return anything!!! ****
+//? 20)
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 101
+        const oddArr = ?
+//? 23)
+const pen = {}; pen. ink = “blue”; if(pen[“ink”]) { }else {
+    console.log|‘Color is ${pen[” ink”]}‘) console. log( “Color is undefined!“)
+    }
+//? 24)
+const products = [
+{“model” : “HP Pavilion”, “processor”: “Intel Core i7",“storage”: “512GB SSD”, “price”: 999},
+{“model”: “Dell XPS”, “processor”: “Intel Core 15”,“ram”: “8GB”, “price”: 899},
+{“Model”:“MacBook Air”, “processor”: “Apple M1",“ram”: “8GB”, “storage”: “256GB SSD”, “price”: 1099},
+{“model”: “Asus ROG Strix”, “storage”: “512GB SSD”, “price”: 1499},
+//? 25)
+    let object = { “myName’ : ‘Anthony’, ‘myAge’ : 30 }; let objectTwo = { ‘myAge’ : 675 };
+    let newobject = {...object, ...objectTwo };
+    console. Log(newobject);
