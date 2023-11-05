@@ -18,12 +18,13 @@ console.log("**** TRAVERSING DOM ****")
 //! parentElement, parentNode
 
 const htmlLi = document.querySelector("ul li:nth-child(1)")
+console.log(htmlLi);
 
 console.log(htmlLi.parentNode.parentNode.parentNode) //? main
 console.log(htmlLi.parentElement.parentElement.parentElement) //?main
 
 //? closest() metodu root yonundeki uygun olan parent'i secer
-console.log(htmlLi.closest("section")) //? en yakın section parent'ı bulur
+console.log(htmlLi.closest("section")) //? en yakın section parent'ı bulur section.item-list
 
 console.log(htmlLi.closest("main").querySelector("#add-new-item")) //? en yakın main'i bul icersindeki adnew-item idli elementi sec
 
