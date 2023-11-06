@@ -98,3 +98,7 @@ document.querySelector(".check").addEventListener("click", ()=> {
         skor ++
     }
 })
+
+localStorage.setItem("hasan" , 35)
+console.log(localStorage.getItem("hasan"))
+console.log("hasan");

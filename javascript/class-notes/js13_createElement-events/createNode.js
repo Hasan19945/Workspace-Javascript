@@ -11,6 +11,7 @@ const text = document.createTextNode("P elementi")
 //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
 myPar.appendChild(text)
 
+
 //?4- Yeni olusan elementi DOM tree'ye ekle.
 const addItemSection = document.querySelector(".add-item")
 addItemSection.appendChild(myPar)
@@ -21,6 +22,7 @@ addItemSection.before(myPar) //? add-item section'ın hemen üzerine myPar'i bag
 //? React icerigine sahip olan li elementinin devamına yeni elemnti ekle
 const reactLi = document.querySelector("ul li:nth-child(4)")
 reactLi.after(myPar)
+
 
 //* ------- ID, CLASS GIBI OZELLIKLERI ATAMA ------
 //? 1) Yontem
