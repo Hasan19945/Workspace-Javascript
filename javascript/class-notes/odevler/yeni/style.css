@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    height: 100vh;
+}
+/* section{
+   margin-top: 80px;
+} */
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.footer{
+    margin-top: 30px;
+    text-align: center;
+}
+.images{
+    transform: rotate(45deg);
+}
+#codebreakers{
+    width: 200px;
+    height: auto;
+  margin-bottom: 80px ;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    height: 52px;
+}
+input, button{
+    border:none;
+    outline: none;
+}
+/* #yeniGorev{
+    padding: 20px;
+} */
+.input-container input{
+    padding : 18px 15px;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width:320px;
+}
+.input-container button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 25px;
+    color:grey;
+    background:#fff;
+    border-left : 2px solid #eee;
+}
+*************javascript kodlarından sonra*********************
+li {
+    margin: 10px auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+.completed {
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+}
+.tick, .delete {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+New
+
+

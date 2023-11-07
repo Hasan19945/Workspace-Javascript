@@ -7,7 +7,7 @@
 //! Bu prosese “bubbling”, denilir çünkü event, en içteki elementten en dıştaki elemente kadar bir baloncuk gibi yayılır.
 
 document.querySelector("form").addEventListener("click", () => alert("form"))
-
+ 
 document.querySelector("div").addEventListener("click", () => alert("div"))
 
 document.querySelector("p").addEventListener("click", () => alert("p"))
