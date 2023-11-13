@@ -10,11 +10,11 @@ document.querySelector("form").addEventListener("click", () => alert("form"))
  
 document.querySelector("div").addEventListener("click", () => alert("div"))
 
-document.querySelector("p").addEventListener("click", () => alert("p"))
+document.querySelector("html").addEventListener("click", () => alert("html"))
 
 //!  <p> elementinin tiklanmasi ile aşağıdaki sırada olaylar tetiklenir.:
 //* 1-  <p> elementinin kendi event'ı
-//* 2- Dıstaki <div> in event'ı
+//* 2- Dıstaki <div> in event'ı 
 //* 3- En dıştaki <form> elementinin event'ı.
 //* 4- Bu sekilde document objesine kadar gider (Eger event tanimlanmasi ise)
 
