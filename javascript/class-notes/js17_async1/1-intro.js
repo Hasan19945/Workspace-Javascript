@@ -28,7 +28,8 @@
 //   while (new Date().getTime() < basla + sure) {}
 // }
 // console.time("basla") //?timer'ı baslat
-// gecikme(2000) //? 3000 ms 'lik bir bloklama
+// gecikme(3000) //? 3000 ms 'lik bir bloklama
+// console.log("basla bklm");
 // console.timeEnd("basla") //? timer'ı bitir ve gecen sureyi goster
 
 //* Asenkron (setTimeout()) - Belirli sure sonraya zaman kurar.
@@ -36,7 +37,11 @@
 //? Asenkron kod (macrotask kuyrugu)
 // const timeoutId = setTimeout(() => {
 //   console.log("Sure doldu")
-// }, 1000) //? en az 1000ms sonrasinda tetikleme olur.
+// }, 100) //? en az 1000ms sonrasinda tetikleme olur.
+
+// setTimeout(()=> {
+//   console.log("kacimci gelecek bklm");
+// }, 600)
 
 // setTimeout(() => {
 //   console.log("timeout2 doldu")
@@ -50,13 +55,13 @@
 
 //* Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
 //*------------------------------------------------
-// let i = 0
-// const zaman = setInterval(() => {
-//   console.log(++i)
-//   if (i >= 5) {
-//     clearInterval(zaman)
-//   }
-// }, 1000)
+let i = 0
+const zaman = setInterval(() => {
+  console.log(++i)
+  if (i >= 5) {
+    clearInterval(zaman)
+  }
+}, 500)
 
 //! Callback Hell (nested ve birbirine bagli callback'ler)
 //!-----------------------------------------------------
@@ -72,8 +77,8 @@ setTimeout(() => {
       console.log("John: How Are you?") //? veri gonder
       setTimeout(() => {
         console.log("Sarah:Fine and you?") //?gondermeye baslaniyor
-      }, 1000)
-    }, 1000)
+      }, 500)
+    }, 50)
   }, 1000)
 }, 1000)
 
