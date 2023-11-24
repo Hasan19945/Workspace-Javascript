@@ -1,0 +1,89 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: red;
+  }
+  #buttons {
+    display: flex;
+    gap: 3rem;
+  }
+  #timeDisplay {
+    font-size: 2.5rem;
+    color: rgb(76, 125, 2);
+    font-family: Consolas, monospace;
+  }
+  #timerContainer {
+    width: 70vw;
+    height: 40vh;
+    text-align: center;
+    border: 1px solid aqua;
+    background-color: bisque;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (max-width: 300px) {
+    i {
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: rgb(0, 123, 255);
+    }
+    #timeDisplay {
+      font-size: 1.8rem;
+      color: rgb(76, 125, 2);
+      font-family: Consolas, monospace;
+    }
+  }
+  @media (max-width: 163px) {
+    i {
+      font-size: 0.7rem;
+      cursor: pointer;
+      color: rgb(0, 123, 255);
+    }
+    #timeDisplay {
+      font-size: 0.7rem;
+      color: rgb(125, 2, 90);
+      font-family: Consolas, monospace;
+    }
+    #buttons {
+      gap: 1rem;
+    }
+    #timerContainer {
+      width: 70vw;
+      height: 40vh;
+      text-align: center;
+      border: 1px solid aqua;
+      background-color: bisque;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
