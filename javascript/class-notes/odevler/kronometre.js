@@ -1,3 +1,6 @@
+
+
+
 const timeDisplay = document.getElementById("timeDisplay");
 console.log(timeDisplay);
 const playBtn = document.getElementById("play");
