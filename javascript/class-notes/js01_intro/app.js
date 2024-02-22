@@ -16,8 +16,8 @@
 
 //* DEGISKEN TANIMLAMA
 
-const num1 = 5
-let num2 = 6.6
+const num1 = 8
+let num2 = 5.6
 
 console.log(num1)
 console.log(typeof num1)
@@ -31,6 +31,7 @@ console.log(typeof num2)
 num2 = num2 + 1
 console.log(num2)
 num3= num2 +num1
+console.log(num3);
 console.log(typeof num2)
 num4= num2 + 'selam'
 console.log(typeof num4) 

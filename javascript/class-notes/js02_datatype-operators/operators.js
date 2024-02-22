@@ -5,7 +5,7 @@ const maas = 70000
 const izinGunu = 30
 console.log(`MAAS=${maas} + SIGORTA, 
 IZIN SURESI: ${izinGunu} gün`)
-const cay=15
+const cay=20
 const masraf=5
 console.log(`cayin kari=${cay}-${masraf}`)
 
