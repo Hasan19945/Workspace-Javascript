@@ -126,9 +126,9 @@ if(n3<=n1){if (n3<=n2){console.log("en kucuk:", n3)}} // bunu bu sekilde de yaza
 
 //**************** TERNARY *******************
 //? if-else
-const not = 60
+const not = 47
 
-const result = not >= 50 ? "GEÇTİ" : "KALDI"
+const result = not >= 50 ? "Gecti" : not >= 45 ? "Ucu ucuna gecti" : "Kaldi"
 console.log(result)
 
 let gecenOgrenciSayisi = 0
@@ -183,7 +183,7 @@ console.log(gelir)
 
 
 //**************** SWITCH-CASE *******************
-const gun = 6
+const gun = 3
 
 switch (gun) {
   case 1:
@@ -207,7 +207,7 @@ switch (gun) {
 }
 
 // yeni ornek
-const ay = 5
+const ay = 3
 
 switch (ay) {
   case 1:
@@ -215,11 +215,16 @@ switch (ay) {
     break
   case 2:
     console.log(februar) // " icinde olmasi gerekiyor ama 2. ay olmadihgi icin bunu okumadi ve hata vermedi"
-    break
+ 
   case 3:
     console.log("mars")
-    break
+    //break olmadigi icin marstan sonrakileri de ciktida veriyor
+    case 4:
+      console.log("nisan");
+      break // oldugu icin sonrakine gecmedi
+    
   default:
-    console.log("mars'ta bitti")
-    break
+    console.log("Nisan da bitti")
+    
+ 
 }

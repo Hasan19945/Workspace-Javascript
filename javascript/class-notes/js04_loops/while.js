@@ -4,7 +4,7 @@
 
 console.log("****** WHILE *******")
 
-let i = 0
+let i = 1
 while (i < 10) {
   console.log(i)
   i++
@@ -30,7 +30,7 @@ console.log("bu da benim olsun")
 //   alert("Not 0'dan kucuk veya 100'den buyuk olamaz.")
 // }
 
-9890let not1 = prompt("Lütfen notunuzu giriniz:")
+let not1 = prompt("Lütfen notunuzu giriniz:")
 while (not1 < 0 || not1 > 100) {
   console.log("Not 0'dan kucuk veya 100'den buyuk olamaz.")
   not1 = prompt("Yeniden notunuzu giriniz:")
