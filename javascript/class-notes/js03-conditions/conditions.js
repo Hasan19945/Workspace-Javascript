@@ -4,7 +4,7 @@
 
 console.log("*** CONDITIONS ***")
 
-const sayi1 = 0
+const sayi1 = 5
 if (sayi1 < 0) {
   console.log("Sayi negatiftir")
 } else if (sayi1 > 0) {
@@ -13,7 +13,17 @@ if (sayi1 < 0) {
   console.log("Sayi 0 a eşittir")
 }
 
-const grade = 20
+
+const say1 = 0
+if (say1 < 0) {
+  console.log("bu sayi negatiftir")
+} else if (say1 > 0) {
+  console.log("bu sayi pozitif");
+} else {
+  console.log("bu sayi 0'dir");
+}
+
+const grade = 85
 let sonuc = ""
 
 if (grade < 0 || grade > 100) {
@@ -32,6 +42,28 @@ if (grade < 0 || grade > 100) {
 //! Kısa hali
 if (sonuc) {
   console.log("SONUC:", sonuc)
+}
+
+//farkli yazalim
+const point = 70
+let karekter = ""
+
+if ( point <0 || point>100 ) {
+  console.log("Det er desverre feil");
+} else if (point >= 85) {
+  karekter = "5"
+} else if ( point >= 70) {
+  karekter = "4"
+} else if (point >= 60) {
+  karekter = "3"
+} else if (point >=45) {
+  karekter = "2"
+} else {
+  karekter = "zayif"
+}
+
+if (karekter) {
+  console.log("resultat:", karekter);
 }
 
 //? uzun hali
