@@ -11,7 +11,7 @@ console.log("** FUNC DECLARATION **")
 //? void fonksiyon(return'u olmayan fonksiyon,diğer ifade cagrildi yere bir deger dondurmeyen fonskyon)
 //? parametresi olmayan fonksiyon
 function topla() {
-  let a = 7
+  let a = 4
   let b = 8
   let sonuc = a + b
   console.log(sonuc)
@@ -24,7 +24,7 @@ for (let i = 0; i < 7; i++) {
   topla()
 }
 function topla() {
-  let x=3
+  let x=7
   let y=2
   let toplam =  x + y
   console.log(toplam)
