@@ -12,13 +12,21 @@ while (i < 10) {
 
 console.log("Dongu bitti")
 
-let k =2
+let k =3
 while (k<7) {
   console.log(k)
   k++
 }
 
-console.log("bu da benim olsun")
+console.log("k dongusu bitti")
+
+let s = 2
+while (s < 5) {
+  console.log(s)
+  s++
+}
+
+
 //? Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
 //? not girmeye zorlayan kodu while dongusu ile yaziniz.
