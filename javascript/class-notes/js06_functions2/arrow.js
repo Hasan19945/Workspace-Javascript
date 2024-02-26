@@ -9,11 +9,12 @@ console.log("*** ARROW ****")
 // yaz()  //! error
 const yaz = () => console.log("Hello JS")
 yaz()
+console.log(yaz);
 
 //* ORNEK: paramterli, ve donus degerli
 //***********************************************/
-const kareAl = (num) => num * num
-console.log("Kare:", kareAl(3))
+const kareAl = (sayi) => sayi * sayi
+console.log("KARESI:", kareAl(5))
 
 //* ORNEK: birden fazla ifade(expression) icerirse
 //***********************************************/
@@ -26,9 +27,9 @@ const hesapla = (x, y) => {
   const toplam = x + y
   const carpim = x * y
   const sonuc = carpim / toplam
-  return sonuc
+  return sonuc //Bu olmasaydi sonuc undifined yazardi
 }
-console.log("SONUC=", hesapla(4, 2))
+console.log("SONUC=", hesapla(8, 2))
 
 //* ORNEK: Doğum tarihini parametre olarak alan ve ana
 //* programa yaşı hesaplayıp döndüren fonksiyonu yazınız.
@@ -47,6 +48,8 @@ const silindirHacim = (r, h) => Math.PI * r * r * h
 //   return Math.PI * r * r * h
 // }
 console.log(`Hacim= ${silindirHacim(2, 3)}`)
+console.log(`Hacim= ${silindirHacim()}`)
+console.log(`Hacim= ${silindirHacim}`)
 
 //* ORNEK: Bir fonksiyon icerisinde baska fonksiyonlar cagrilabilir
 //* (Hesap Makinası)
@@ -80,9 +83,9 @@ const hesapMakinasi = (num1, num2, op) => {
   return result
 }
 
-//const num1 = +prompt("1.Sayi:")
-//const op = prompt("Islemi giriniz: +,-,*,/:")
-//const num2 = +prompt("2.Sayi:")
+const num1 = +prompt("1.Sayi:")
+const op = prompt("Islemi giriniz: +,-,*,/:")
+const num2 = +prompt("2.Sayi:")
 
-// console.log(hesapMakinasi(num1, num2, op))
-//console.log(`${num1}${op}${num2}=${hesapMakinasi(num1, num2, op)}`)
+ console.log(hesapMakinasi(num1, num2, op))
+console.log(`${num1}${op}${num2}=${hesapMakinasi(num1, num2, op)}`)
