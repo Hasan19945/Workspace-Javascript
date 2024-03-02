@@ -5,12 +5,13 @@
 const str1="new string"
 const str2='new string'
 const str3=`new string`  // backtikler ile template literal
-const str4=new String("new string") // constructor
+const str4=new String("str1") // constructor
 
 console.log(str1);
 console.log(str2);
 console.log(str3);
 console.log(str4);
+console.log("ny setning");
 
 const str5="45"
 const str6="🎈"  // windows + .
@@ -138,7 +139,7 @@ Bugün Js dersinin Stringler konusundasınız.
 
 console.log(fullName);
 
-console.clear()
+//?console.clear()
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 //?                                toUpperCase()                              */
@@ -201,7 +202,7 @@ let  liste="Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand"
 console.log(liste.split(";",3));
 
 //! join ve reverse metodları string metodu değildir, Array metodlarıdır. Ama split ile çok kullanıbilir.
-console.clear()
+//?console.clear()
 //? Join Metodu
 // Birleştirme işlemi
 
@@ -279,7 +280,7 @@ console.log(yeniDeg);
 let variable1=variable.replaceAll(" ","_").replaceAll("ı","i")
 console.log(variable1);
 
-console.clear()
+//?console.clear()
 /* -------------------------------------------------------------------------- */
 //!                       String içinde arama işlemleri                       */
 /* -------------------------------------------------------------------------- */
@@ -329,7 +330,7 @@ console.log(word.search(/ü/gi));
 console.log(word.replaceAll(/ü/gi,"i"));
 
 console.log(word.search(/[aeiıouöü]/i));
-console.clear()
+//console.clear()
 /* -------------------------------------------------------------------------- */
 /*                                   match()                                  */
 /* -------------------------------------------------------------------------- */
