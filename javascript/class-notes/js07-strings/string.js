@@ -128,10 +128,11 @@ console.log("Nasılsın ",metin2," kursuna kayıt yaptınmı" , metin1);
 
 const ad="Sema"
 const soyad="Güven"
+const sehir="Izmir"
 // backtikler kullanılır
 //  değişkenleri ${ } içine alıyoruz
 
-const fullName=`${ad} ${soyad} nasılsınız.
+const fullName=`${ad} ${soyad} nasılsınız ${sehir}'de.
 
 Bugün Js dersinin Stringler konusundasınız.
 
@@ -139,7 +140,7 @@ Bugün Js dersinin Stringler konusundasınız.
 
 console.log(fullName);
 
-//?console.clear()
+console.clear()
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 //?                                toUpperCase()                              */
@@ -184,7 +185,7 @@ for (let i=0; i<splittedMetin3.length; i++){
     }    
 }
 
-console.log(metin3.split(""));
+console.log(metin3.split("a"));
 
 let months="Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec"
 
