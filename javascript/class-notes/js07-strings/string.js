@@ -175,12 +175,14 @@ console.log(kucukHarflerCumle);
 //str.split(separator)
 
 let metin3="Clarusway It Bootcamp"
-let splittedMetin3=metin3.split(" ")
+let splittedMetin3=metin3.split(" ")// ['Clarusway', 'It', 'Bootcamp'] yapar
 console.log(splittedMetin3);
 console.log(metin3);
+console.log(yenibisey=metin3);
+console.log(farklibisey=metin3.split(""));// ['C', 'l', 'a', 'r', 'u', 's', 'w', 'a', 'y', ' ', 'I', 't', ' ', 'B', 'o', 'o', 't', 'c', 'a', 'm', 'p'] yapar
 
 for (let i=0; i<splittedMetin3.length; i++){
-    if (splittedMetin3[i]==="Clarusway"){
+    if (splittedMetin3[i]==="Bootcamp"){
         console.log(`Clarusway kelimesi bu cümlenin ${i+1}. elemanıdır`);
     }    
 }
