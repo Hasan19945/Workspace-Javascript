@@ -12,7 +12,7 @@ console.log("***** ARRAYS ******")
 let isimler = ["ahmet", "mehmet", 4, true, 6.6, "Canan", "Yeni", "2.yeni"]
 console.log(isimler)
 
-console.log("UZUNLUK:", isimler.length) //? 6
+console.log("UZUNLUK:", isimler.length) //? 8
 console.log(typeof isimler)
 
 //* Diziden Veri Okuma-Yazma (indisleme)
@@ -98,6 +98,8 @@ console.log(meyveler, uzunluk)
 //** pop() son elemani siler ve sildigi elemani dondurur.
 const removed = meyveler.pop()
 console.log(meyveler, removed)
+console.log(meyveler);
+console.log(removed);
 
 //* shift dizinin 0. indeks elemanini siler ve silenen elemani dondurur.
 const removedShift = meyveler.shift()

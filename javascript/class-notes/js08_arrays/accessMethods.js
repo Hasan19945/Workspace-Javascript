@@ -10,6 +10,7 @@ const numbers = [3, 5, 2, "4", "bes", "four", 3, "4", "bes", "1", 3, "bes"]
 console.log(numbers.includes("4")) //?true
 console.log(numbers.includes(4)) //?false
 console.log(numbers.includes("Four".toLowerCase())) //?true
+console.log(numbers.includes("Four")) //?false
 console.log(numbers)
 
 //* indexOf(), lastIndexOf();
@@ -23,7 +24,7 @@ console.log(numbers.lastIndexOf("dort")) //? -1
 //* join()
 //*-----------------------------------------------------------
 //? join, dizinin elamanlari birlestirip string'e cevirir.
-const joinedNumbers = numbers.join(",")
+const joinedNumbers = numbers.join(".,")
 console.log(joinedNumbers, typeof joinedNumbers)
 
 //* toString()
@@ -41,6 +42,7 @@ const slicedCars = cars.slice(1) //?  ['Mercedes', 'Fiat', 'Togg']
 console.log(slicedCars, cars)
 
 console.log(cars.slice(0, 2)) //?['BMW', 'Mercedes']
+console.log(cars.slice(1,3)); //? ['Mercedes', 'Fiat']
 
 //* concat()
 //*-----------------------------------------------------------
@@ -48,7 +50,7 @@ const message = ["The weather", "is", "very", "nice"]
 const zaman = new Date().toDateString()
 console.log(zaman)
 
-const concated = message.concat("hello", zaman, "Merhaba")
+const concated = message.concat("hello","tarih", zaman, "Merhaba")
 
 console.log(concated)
-console.log(concated.reverse().join(" "))
+console.log(concated.reverse().join(" 0 "))
