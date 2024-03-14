@@ -15,7 +15,7 @@ for (let price of prices) {
 console.log("**************")
 
 //?forEach
-prices.forEach((p) => console.log(p * 1.1))
+prices.forEach((p) => console.log(p * 2))
 
 
 console.log("**********");
@@ -36,24 +36,16 @@ harcliklar.forEach((harcliklar) =>console.log(harcliklar*2)); //harcliklar.forEa
 console.log("*********");
 //? 2 parametreli forEach
 prices.forEach((price, index) => console.log("DEGER:", price, "SIRA:", index))
-harcliklar.forEach((ha,index)=> console.log("Ydeger:", ha, "Ysiar:", index+11))
+harcliklar.forEach((ha,index)=> console.log("Ydeger:", ha, "Ysiar:", index+100))
 
-//? prices'ın toplamını hesaplayiniz.
-let sum = 0
-prices.forEach((price) => (sum += price))
-console.log("SUM:", sum)
-
-let toplam =1000
-harcliklar.forEach((har) => (toplam += har))
-console.log("Total ", toplam );
-
-
+//? tekrar 
+const ayliklar = [20, 25, 23, 28, 30]
 //? 3 paramtreli foreach
 //? callback func'da satir sayisi birden fazla oldugu icin suslu kullandik.
 //? foreach metodu void function'dır yani bir sey dondurmez.
-/*prices.forEach((p, i, arr) => {
+prices.forEach((p, k, ara) => {
   if (p < 270) {
-    arr[i] = p * 1.1
+    ara[k] = p * 1.1
   }
 })
 console.log(prices)
@@ -72,12 +64,17 @@ const names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayşe", "canan"]
 
 const upperCasedNames = names.map((n) => n.toLocaleUpperCase())
 console.log(upperCasedNames)
+const lowerCaseNameler = names.map((h) => h.toLocaleLowerCase())
+console.log(lowerCaseNameler);
 
 //? Foreach ile zorlama çözüm
 const upperNames = []
 names.forEach((n) => upperNames.push(n.toLocaleUpperCase()))
 console.log(upperNames)
 
+const UPP =[]
+names.forEach((n) => UPP.push("Hasan", "Ali", "Mehmet"))
+console.log(UPP)
 //?-------------- ÖRNEK -------------------
 //? tlPrices dizisindeki rakamlarin Euro ve dolar
 //? karsiliklarini hesaplatarak yeni dizelere kaydediniz
@@ -87,7 +84,7 @@ const dolar = 27.97
 const tlPrices = [100, 150, 100, 50, 80]
 
 const dolarPrices = tlPrices.map((tl) => Number((tl / dolar).toFixed(2)))
-const euroPrices = tlPrices.map((tl) => Number((tl / euro).toFixed(2)))
+const euroPrices = tlPrices.map((tl) => Number((tl / euro).toFixed(1)))
 
 console.log(dolarPrices)
 console.log(euroPrices)
@@ -106,9 +103,13 @@ console.log(buyukOnbin, maaslar)
 const aradakiMaaslar = maaslar.filter((m) => m >= 8000 && m <= 10000)
 console.log(aradakiMaaslar)
 
+//? Maasi 6000 - 18000 arasinda olanlari bir diziye saklayalim
+const altiIleOnsekizbin = maaslar.filter((k) => k >= 6000 && k <= 18000)
+console.log(altiIleOnsekizbin);
+
 //* =======================================
 //*          CHAINING (PIPELINE)
-/* =======================================
+
 //? Maasi 9000'den az olanlara %50 zam yaparak bu degerleri
 //? yeni diziye saklayalim.
 
@@ -154,10 +155,13 @@ console.log("Zamlı Maas Toplami:", zamliMaasToplami)
 //? test gerceklestirir.Tum elemanlar icin test basarili ise
 //? true aksi takdirde false deger dondurur.
 
-const ages = [18, 22, 78, 44, 78, 89, 25]
+const ages = [18, 22, 78, 44, 98, 89, 25]
 const check = ages.every((age) => age >= 18)
 
 check ? console.log("All ages are over 18") : console.log("Some are under 18")
+
+const kontrol = ages.every((age) => age <= 25)
+kontrol ? console.log("Everybody can join to this club") : console.log("Some of them can not");;
 
 //* some()
 //*-----------------------------------------------------------

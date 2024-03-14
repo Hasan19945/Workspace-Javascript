@@ -17,18 +17,18 @@ console.log("TOPLAM:", toplam)
 //?-------------- ÖRNEK -------------------
 //? notlar dizisindeki notların 50'den kucuk olanları ve buyuk olanları 2 ayri diziye kaydediniz.
 
-// const ellidenKucukler = []
-// const ellidenBuyukler = []
+ const ellidenKucukler = []
+ const ellidenBuyukler = []
 
-// for (let i = 0; i < notlar.length; i++) {
-//   notlar[i] < 50
-//     ? ellidenKucukler.push(notlar[i])
-//     : ellidenBuyukler.push(notlar[i])
-// }
+ for (let i = 0; i < notlar.length; i++) {
+   notlar[i] < 50
+     ? ellidenKucukler.push(notlar[i])
+     : ellidenBuyukler.push(notlar[i])
+ }
 
-// console.log(ellidenBuyukler)
-// console.log(ellidenKucukler)
-// console.log(notlar)
+ console.log(ellidenBuyukler)
+ console.log(ellidenKucukler)
+ console.log(notlar)
 
 //?-------------- ÖRNEK (FOR-IN) -------------------
 //? notlar dizisindeki notların 50'den kucuk olanları ve buyuk olanları 2 ayri diziye kaydediniz.
@@ -50,16 +50,16 @@ console.log("TOPLAM:", toplam)
 
 //?-------------- ÖRNEK (FOR-OF) -------------------
 
-const ellidenKucukler = []
-const ellidenBuyukler = []
+// const ellidenKucukler = []
+// const ellidenBuyukler = []
 
-for (let not of notlar) {
-  not < 50 ? ellidenKucukler.push(not) : ellidenBuyukler.push(not)
-}
+// for (let not of notlar) {
+//   not < 50 ? ellidenKucukler.push(not) : ellidenBuyukler.push(not)
+// }
 
-console.log(ellidenBuyukler)
-console.log(ellidenKucukler)
-console.log(notlar)
+// console.log(ellidenBuyukler)
+// console.log(ellidenKucukler)
+// console.log(notlar)
 
 //*-------------------------------------------------------
 //* SORU: students dizisinde ogrenci isimleri saklanmaktadir.
