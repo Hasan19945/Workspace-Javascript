@@ -89,18 +89,31 @@ const zaman = setInterval(() => {
 //* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
 // !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
 
+// setTimeout(() => {
+//   console.log("john:Hi") //? veri isteği (req)
+//   setTimeout(() => {
+//     console.log("Sarah: Hello") //? res geliyor
+//     setTimeout(() => {
+//       console.log("John: How Are you?") //? veri gonder
+//       setTimeout(() => {
+//         console.log("Sarah:Fine and you?") //?gondermeye baslaniyor
+//       }, 500)
+//     }, 50)
+//   }, 1000)
+// }, 1000)
+
 setTimeout(() => {
-  console.log("john:Hi") //? veri isteği (req)
+  console.log("hei");
   setTimeout(() => {
-    console.log("Sarah: Hello") //? res geliyor
+    console.log("Heisan");
     setTimeout(() => {
-      console.log("John: How Are you?") //? veri gonder
-      setTimeout(() => {
-        console.log("Sarah:Fine and you?") //?gondermeye baslaniyor
-      }, 500)
-    }, 50)
-  }, 1000)
-}, 1000)
+      console.log("Hvordan går det");
+    }, 100);
+    
+  }, 800);
+  
+}, 10);
+
 
 //? COZUMLER:
 //?----------------------------------------------------
