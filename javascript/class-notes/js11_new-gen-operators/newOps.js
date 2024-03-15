@@ -54,6 +54,7 @@ console.log("MAAS:", insanlar.kisi1.maas)
 const { kisi1, kisi2 } = insanlar //? Leve1 dest.
 console.log(kisi1)
 
+
 const { kimlikNo: kisi1Kimlik, adi: kisi1Adi, soyadi: kisi1Soyadi } = kisi1 //?Level2
 const { kimlikNo: kisi2Kimlik, adi: kisi2Adi, soyadi: kisi2Soyadi } = kisi2
 console.log(kisi2Kimlik)
@@ -65,6 +66,7 @@ const {
 
 console.log(soyadi)
 
+console.log(adi);
 //* Example
 const team = [
   {
@@ -114,14 +116,14 @@ team.forEach((person) => {
 const kisiOku = function () {
   return {
     no: "1234567890",
-    isim: "Ahmet",
+    isim: "Ahmt",
     soyisim: "Can",
     is: "Kasap",
     dilSayisi: 2,
   }
 }
 
-// console.log("KİSİ:", kisiOku())
+ console.log("KİSİ:", kisiOku())
 
 //* function'un dondurdugu obje dogrudan dest. yapilabilir
 let { no, isim, soyisim, dilSayisi } = kisiOku()
@@ -138,9 +140,13 @@ const data = {
 }
 
 const productPrint = (data) => {
-  console.log(`${data.brand}-${data["product"]}: ${data.stock}`)
+  console.log(`${data.brand}-${data["product"]} Pro: ${data.stock} ung'dan daha mi iyi?  `)
 }
 
+const Soru = (data) => {
+  console.log(`${data.brand}-${data["product"]} Pro: ${data.stock}  Samsung'dan daha mi iyi? `)
+}
+console.log(Soru);
 const productPrintDestr = (data) => {
   const { brand, product, stock } = data
   console.log(`${brand}-${product}: ${stock}`)
@@ -156,8 +162,8 @@ productPrintDestr(data)
 //* ==============================================
 //*  REST (...)
 const karaaraclari =[" ATV","Araba", "kamyonet", "tir", "kamyon"]
-const [p1, p2, ...gerkalanlar] =karaaraclari
-console.log(gerkalanlar);
+const [p1, p2, ...gerkalanla] =karaaraclari
+console.log(gerkalanla);
 console.log(karaaraclari);
 //* =============================================
 //? rest object
@@ -167,7 +173,7 @@ const veri ={
   product:"Iphones15",
   stock:1000
 }
-const {id, brand, ...productkalanlar} =veri
+const {id, ...productkalanlar} =veri
 console.log(productkalanlar);
 
 const havaaraclari =["ucak ", "IHA", "SIHA", "helikopter"]
@@ -274,6 +280,11 @@ for (let key of Object.keys(sahislar)) {
 }
 
 
+for (let val of Object.values(sahislar)) {
+console.log(val);
+}
+
+
 //1. Basic Object Destructuring: Temel Nesne Yıkımı
 const person = {
   name: 'John',
@@ -281,10 +292,11 @@ const person = {
   city: 'New York'
 };
 // Extracting properties using object destructuring
-const { name, age, city } = person;
+const { name, age, city, yer } = person;
 console.log(name); // Output: John
 console.log(age); // Output: 25
-console.log(city); // Output: New York
+console.log(city);
+console.log(yer); // Output: New York
 
 const car = {
   brand: 'Toyota',

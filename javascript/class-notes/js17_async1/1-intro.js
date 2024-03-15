@@ -53,6 +53,26 @@
 
 // clearTimeout(timeoutId) //? timeout iptal eder.
 
+
+
+//?
+const deneyim = setTimeout(() => {
+  console.log("ANDRE");
+  
+}, 100);
+
+setTimeout(() => {
+  console.log("FJERDE");
+  
+}, 700);
+
+setTimeout(() => {
+  console.log("TREDJE");
+}, 500);
+
+console.log("FØRSTE");
+//?clearTimeout(deneyim) timeout'u iptal eder 
+
 //* Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
 //*------------------------------------------------
 let i = 0

@@ -53,7 +53,8 @@ console.log(arac["power"]["fosil"])
 //   "Aracin hangi bilgisini ogrenmek istersiniz, marka, model,motor,vites ?"
 // )
 
-// console.log(arac[key])
+console.log(arac["model"])
+console.log(arac.model);
 
 arac.model = "Q3"
 arac["power"]["fosil"] = "Mazot"
@@ -80,10 +81,10 @@ const personel = {
     console.log(this)
     return new Date().getFullYear() - this.dogum
   },
-  //   ozet: () => {
-  //     console.log(this)
-  //     return `${this.adi} ${this.soyadi} ${this.yasHesapla()} yasindadir`
-  //   },
+     ozet: () => {
+      console.log(this)
+       return `${this.adi} ${this.soyadi} ${this.yasHesapla()} yasindadir`
+     },
   ozet: function () {
     console.log(this)
     return `${this.adi} ${this.soyadi} ${this.yasHesapla()} yasindadir`
@@ -117,10 +118,15 @@ const people = {
     adi: "Canan",
     soyadi: "Can",
   },
+  ali: {
+    adi: "Ali",
+    soyadi: "ozkan",
+  }
 }
 
 console.log(people.ahmet.adi)
 console.log(people.canan.soyadi)
+console.log(people.ali);
 
 //? JSON
 
@@ -130,11 +136,13 @@ const peopleJSON = [
 ]
 console.log(peopleJSON[1])
 console.log(peopleJSON[0].adi) //? Ahmet
+console.log(peopleJSON[1].soyadi)
 
 const team = [
   { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
   { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+  { name: "semih", surname: "senturk", job: "fotbolplayer", age: 41},
 ]
 console.log("*********")
 //* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
@@ -143,12 +151,17 @@ team.forEach((te) => console.log(te.job))
 //* Ornek2: team dizisindeki name'leri bir diziye saklayalim.
 const names = team.map((t) => t["name"])
 console.log(names)
+const gammel = team.map((g) => g["age"])
+console.log(gammel);
 //
 const jobs = team.map((te) =>te["job"])
 console.log(jobs);
 //* Ornek3: team dizisindeki kisilerin yas toplamini bulalim.
-const totalAge = team.reduce((acc, p) => acc + p.age, 0)
+const totalAge = team.reduce((acc, p) => acc + p.age , 0)
 console.log(totalAge)
+
+const totalagenext2year = team.reduce((acc, k) => acc + k.age+ 2*4, 0)
+console.log(totalagenext2year);
 
 //* Ornek4: name ve surname'leri birlestirip buyuk harfe ceviren ve
 //* bunu fullName key'i ile saklayan, ayni zamanda age degerlerini 5
@@ -161,6 +174,16 @@ const concatinatedNames = team.map((p) => {
   }
 })
 console.log(concatinatedNames);
+
+
+const concatinatedNameler = team.map((l) => {
+  return {
+    fullName: `${l.name} ${l.surname.toUpperCase()} ${l.age}`,
+    age: l.age + 5,
+  }
+})
+
+console.log(concatinatedNameler);
 
 const concatinatedNames1 = team.map((p) => ({
   fullName: `${p.name.toUpperCase()} ${p.surname.toUpperCase()}`,
