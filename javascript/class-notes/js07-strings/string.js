@@ -12,6 +12,11 @@ console.log(str2);
 console.log(str3);
 console.log(str4);
 console.log("ny setning");
+console.log("first")
+
+console.log(first)
+
+
 
 const str5="45"
 const str6="🎈"  // windows + .
